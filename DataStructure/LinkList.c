@@ -30,7 +30,7 @@ Status GetElem_lk(LinkList L, int i, ElemType *e) {
     }
     /*
      *  !p表示因为p为NULL而跳出循环，即到达了尾节点，当i>n时的情况
-     *  如果进了while循环j最大不会超过i，所以这里j>i只表示不仅循环的情况即i<1的情况
+     *  如果进了while循环j最大不会超过i，所以这里j>i只表示不进循环的情况即i<1的情况
      *  也可以写成这样，if(!p || i < 1) return ERROR;
      */
     if(!p || j > i) return ERROR;
